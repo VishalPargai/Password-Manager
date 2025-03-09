@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassVault - Your Personal Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">PassVault</div>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/vishalpargai/">My LinkedIn</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1><u>Password Manager</u></h1>
+        <p>We're excited to have you with us! Managing countless passwords in your digital life can be overwhelming, but we're here to simplify it for you.</p>
+        <h2><u>Your Passwords</u> <span id="alert">(Copied!)</span></h2> 
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr> 
+ 
+        </table>
+
+        <h2><u>Add a Password</u></h2>
+        <form action="/submit" method="post">
+
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
